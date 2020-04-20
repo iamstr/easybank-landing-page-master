@@ -1,0 +1,253 @@
+body,
+html {
+
+    overflow-x: hidden;
+}
+
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    // background: url("../../../assets/images/bg-intro-desktop.svg");
+    // color: #fff;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-color: rgb(103, 75, 175);
+    // color: #fff;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+
+    color: #2c2f4b;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
+    border: 1px solid #fff;
+    box-shadow: 1px 7px 10px 0px #2727272b;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+
+    &-logo {
+        padding: 2em;
+    }
+
+    button.header-button {
+        margin-top: 2em;
+    }
+
+    ul.nav {
+        display: flex;
+        padding-top: .8em;
+        padding-right: 2.5em;
+
+        .nav-items {
+            list-style: none;
+
+            padding: 0 .4em;
+        }
+    }
+
+
+}
+
+.main {
+    padding-left: 5em;
+
+    .hero {
+
+
+        padding: 2em;
+        padding-right: 0;
+
+        .hero-img {
+            background: url("../../../assets/images/bg-intro-desktop.svg");
+            color: #fff;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: -2em;
+            margin-top: -5em;
+
+
+            img {
+                min-width: 300px;
+
+            }
+
+        }
+
+        .hero-article {
+
+            // &:nth-child(2) {
+
+            //     margin-top: 3em;
+            //     padding: 0 3em;
+            // }
+
+            padding-top: 2em;
+            width: 80%;
+
+
+
+
+
+
+            .article-header {
+                font-size: 2.5em;
+                margin-bottom: 1em;
+
+            }
+
+            .article-para {
+                margin-bottom: 1em;
+                font-size: 1.2em;
+                color: grey;
+            }
+        }
+
+    }
+
+    .info {
+        padding-left: 13em;
+        background-color: #b3b3b30f;
+        margin-left: -10em;
+        margin-top: -10em;
+        padding-top: 5em;
+        padding-bottom: 10em;
+
+        .info-header {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin-bottom: 0;
+        }
+
+        .info-paragraph {
+
+            color: lighten($color: gray, $amount: 20);
+            font-size: 1.2em;
+            white-space: normal;
+            text-align: left;
+            line-height: 1.8em;
+            margin-top: 0;
+            width: 53%;
+            margin-bottom: 5.5em;
+            padding-top: 1.6em;
+        }
+
+        .info-section {
+
+            display: flex;
+            flex-direction: row;
+
+            .section {
+                .section-title {
+                    margin-top: 1em;
+                    margin-top: 1em;
+                    font-size: 1em;
+                    font-weight: 600;
+                    color: #000000c4;
+                }
+
+                .section-para {
+                    width: 80%;
+                    text-align: left;
+                    margin-top: .7em;
+                }
+            }
+        }
+    }
+
+    .blog {
+
+        padding-left: 3em;
+
+        .blog-title {
+            font-size: 2.5em;
+            letter-spacing: .2em;
+            // color: grey;
+            margin-bottom: 2em;
+        }
+
+        .blogs {
+            display: flex;
+            padding-right: 4em;
+
+            .blog-post {
+
+                border: 1px solid white;
+                width: 25%;
+                margin-right: 2em;
+                box-shadow: 0px 0px 9px 0px #46464717;
+                padding-bottom: 4em;
+
+                img.post-image {
+                    width: 100%;
+                    height: 50%;
+                    border-top-right-radius: 2%;
+                    border-top-left-radius: 2%;
+                }
+
+                .post-title {
+
+                    padding-left: 2em;
+                    font-size: 1em;
+                    margin-top: 0;
+                    margin-bottom: .3em;
+                    color: lighten(black, 40);
+                    padding-right: 1.3em;
+                }
+
+                .post-content {
+                    padding-left: 2em;
+                    line-height: 1.8em;
+                    text-align: left;
+
+                    padding-bottom: 1em;
+                    padding-right: 1.3em;
+                }
+
+                .post-author {
+                    padding-left: 3em;
+
+                }
+
+                .post-author,
+                .post-content {
+                    color: gray;
+                }
+
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {}

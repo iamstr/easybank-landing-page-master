@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    column-gap: 2em;
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr))
+}
+
+
+$columns: 12;
+
+
+
+@mixin col-x-list {
+    @for $i from 1 through $columns {
+        .col-#{$i}-m {
+            width: calculate((($i*12)/100)*100%);
+        }
+    }
+}
+
+@include col-x-list;
