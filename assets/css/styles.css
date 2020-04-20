@@ -225,7 +225,7 @@ a {
   min-width: 300px;
 }
 .main .hero .hero-article {
-  padding-top: 2em;
+  padding-top: 10em;
   width: 80%;
 }
 .main .hero .hero-article .article-header {
@@ -233,7 +233,7 @@ a {
   margin-bottom: 1em;
 }
 .main .hero .hero-article .article-para {
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
   font-size: 1.2em;
   color: grey;
 }
